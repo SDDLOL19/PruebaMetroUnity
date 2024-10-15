@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 200
+  verticalSpeedMultiplier: 1.5
   cameraToRotate: {fileID: 2019823658242782789}
 --- !u!1 &2906044667558166063
 GameObject:
