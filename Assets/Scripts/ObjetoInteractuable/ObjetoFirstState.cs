@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetoThinkState : BaseStateInteractuable
+public class ObjetoFirstState : BaseStateInteractuable
 {
     float timeToChange = 5, cronometro = 0;
 
     public override void EnterState(ObjetoInteractuable objetoCogido)
     {
-        Debug.Log("Estoy en el estado Think");
+        Debug.Log("Estoy en el estado Primero");
+
+        objetoCogido.EncenderLuces(false);
     }
 
     public override void UpdateState(ObjetoInteractuable objetoCogido)
@@ -24,6 +26,6 @@ public class ObjetoThinkState : BaseStateInteractuable
 
     public override void OnCollisionEnter(ObjetoInteractuable objetoCogido)
     {
-        objetoCogido.ChangeState(objetoCogido.OnState);
+
     }
 }

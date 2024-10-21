@@ -8,6 +8,8 @@ public class ObjetoOffState : BaseStateInteractuable
     {
         Debug.Log("EstoyOff");
         objetoCogido.miRenderer.material = objetoCogido.offMaterial;
+
+        objetoCogido.EncenderLuces(true);
     }
 
     public override void UpdateState(ObjetoInteractuable objetoCogido)
