@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7447849929623378439}
   - component: {fileID: 4142451966435794485}
   - component: {fileID: 2449257383830252039}
+  - component: {fileID: 528526252290565817}
   m_Layer: 0
   m_Name: ObjetoInteractuable
   m_TagString: Untagged
@@ -105,3 +106,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &528526252290565817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171607697265488948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ad5df3993f9564a87a47b889eba56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miRenderer: {fileID: 0}
+  onMaterial: {fileID: 2100000, guid: f7ba998f3c2fb9f4791dbc24467d7010, type: 2}
+  offMaterial: {fileID: 2100000, guid: 2e7f8bf41447fce4895fed4a6a6d780d, type: 2}
+  lookedAtMaterial: {fileID: 2100000, guid: b388474212217a949ba6f5f1e22a9e09, type: 2}
+  baseMaterial: {fileID: 2100000, guid: 0ccc2197d90eeb948a61b39b84366bee, type: 2}
