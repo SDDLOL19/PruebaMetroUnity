@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetoLookedState : MonoBehaviour
+public class ObjetoLookedState : BaseStateInteractuable
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void EnterState(ObjetoInteractuable objetoCogido)
     {
-        
+        Debug.Log("EstoySiendoVisto");
+        objetoCogido.miRenderer.material = objetoCogido.lookedAtMaterial;
+
+        objetoCogido.MissByRay();
+        objetoCogido.ToDoWhenLookeed();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void UpdateState(ObjetoInteractuable objetoCogido)
     {
-        
+        if (Input.GetKey(KeyCode.E))
+        {
+            objetoCogido.ChangeState(objetoCogido.OnState);
+        }
+
+        else
+        {
+            objetoCogido.ChangeState(objetoCogido.ThinkState);
+        }
+    }
+
+    public override void OnCollisionEnter(ObjetoInteractuable objetoCogido)
+    {
+
     }
 }

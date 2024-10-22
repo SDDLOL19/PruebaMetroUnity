@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Raycast : MonoBehaviour
 {
-    void FixedUpdate()
+    void Update()
     {
         RaycastHit hit;
 

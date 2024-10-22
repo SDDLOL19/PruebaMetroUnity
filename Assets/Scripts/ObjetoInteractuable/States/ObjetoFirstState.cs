@@ -10,8 +10,6 @@ public class ObjetoFirstState : BaseStateInteractuable
     public override void EnterState(ObjetoInteractuable objetoCogido)
     {
         Debug.Log("Estoy en el estado Primero");
-
-        objetoCogido.EncenderLuces(false);
     }
 
     public override void UpdateState(ObjetoInteractuable objetoCogido)
