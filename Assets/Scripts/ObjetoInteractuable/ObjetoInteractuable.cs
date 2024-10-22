@@ -40,6 +40,11 @@ public class ObjetoInteractuable : MonoBehaviour
         state.EnterState(this);
     }
 
+    public void HitByRay()
+    {
+        Debug.Log("I was hit by a Ray");
+    }
+
     public void EncenderLuces(bool encender)
     {
         luzPrincipal[0].SetActive(encender);
